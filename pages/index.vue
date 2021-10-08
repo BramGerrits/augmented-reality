@@ -14,7 +14,7 @@
                         :options="{
                             'src': '/models/floor/floertje.glb',
                             'alt':'A 3D model of an astronaut',
-                            'ar-placement': 'floor'
+                            '__arPlacement': 'floor'
                         }"
                     />
                 </div>
@@ -36,9 +36,9 @@
                         ref="viewer"
                         :scale="0.45"
                         :options="{
-                            'src': '/models/model/testdonut.glb',
+                            'src': '/models/wall/logo.glb',
                             'alt':'A 3D model of an astronaut',
-                            'ar-placement': 'wall'
+                            '__arPlacement': 'wall'
                         }"
                     />
                 </div>
