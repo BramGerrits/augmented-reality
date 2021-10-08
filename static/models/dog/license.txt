@@ -1,0 +1,11 @@
+Model Information:
+* title:	Rigged Golden Retriever Dog
+* source:	https://sketchfab.com/3d-models/rigged-golden-retriever-dog-7bc35156e66f454c965e5f9d613c6517
+* author:	CodyTheNoobBlender (https://sketchfab.com/CodyTheNoobBlender)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Rigged Golden Retriever Dog" (https://sketchfab.com/3d-models/rigged-golden-retriever-dog-7bc35156e66f454c965e5f9d613c6517) by CodyTheNoobBlender (https://sketchfab.com/CodyTheNoobBlender) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
