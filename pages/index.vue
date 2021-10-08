@@ -6,13 +6,13 @@
             :options="{
                 'src': '/models/dog/scene.gltf',
                 'alt':'A 3D model of an astronaut',
+                'ar-placement': 'wall'
             }"
         />
 
         <button class="button enter-ar" @click="$refs.viewer.enterAR()">
             hatseflats
         </button>
-
     </main>
 </template>
 
@@ -26,8 +26,8 @@
 
 <style>
     :root {
-        --primary: teal;
-        --white: #f8f8f8;
+        --primary : teal;
+        --white   : #F8F8F8;
     }
 
     * {
@@ -36,19 +36,19 @@
     }
 
     .button {
-        height: 40px;
+        height     : 40px;
 
-        padding: 0 16px;
+        padding    : 0 16px;
 
-        border: 0;
-        outline: 0;
-        background: var(--primary);
-        color: var(--white);
+        border     : 0;
+        outline    : 0;
+        background : var(--primary);
+        color      : var(--white);
     }
 
     .button.enter-ar {
-        position: fixed;
-        top: 0;
-        left: 0;
+        position : fixed;
+        top      : 0;
+        left     : 0;
     }
 </style>
