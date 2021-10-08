@@ -39,14 +39,25 @@
                     // console.log(event)
                 }
 
+                // Set scale
+                element['scale'] = `${scale} ${scale} ${scale}`
+
+                // Default values
+                element['ar'] = true
+                element['arScale'] = 'fixed'
+                element['auto-rotate'] = true
+                element['ar-modes'] = 'webxr scene-viewer quick-look'
+                element['environment-image'] = 'neutral'
+                element['camera-controls'] = true
+                element['disableZoom'] = true
+
+                // Applying all options
                 Object.entries(options).forEach((entry) => {
                     const name = entry[0]
                     const value = entry[1]
 
                     element[name] = value
                 })
-
-                element.scale = `${scale} ${scale} ${scale}`
 
                 parent.appendChild(element)
             }
