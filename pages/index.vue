@@ -1,9 +1,7 @@
 <template>
     <main>
-        <nav class="nav">
-            <div class="logo">
-                Wannabe Floor Company
-            </div>
+        <nav class="navi">
+            <img class="logo" src="@/assets/images/floorcopmany.png" />
         </nav>
         <section class="product-grid">
             <div class="product">
@@ -92,9 +90,13 @@
     }
 
     main {
-        width      : 100%;
-        min-height : 100vh;
-        background : var(--white);
+        display         : flex;
+        flex-direction  : column;
+        align-items     : center;
+        justify-content : center;
+        width           : 100%;
+        min-height      : 100vh;
+        background      : var(--white);
     }
 
     button {
@@ -104,6 +106,40 @@
 
     svg path {
         fill : var(--black);
+    }
+
+    @keyframes sickeFlip {
+        0% {
+            transform : rotateX(0deg);
+        }
+
+        20% {
+            transform : rotateX(360deg);
+        }
+
+        100% {
+            transform : rotateX(360deg);
+        }
+    }
+
+    .navi {
+        display         : flex;
+        align-items     : center;
+        justify-content : center;
+        position        : fixed;
+        top             : 0;
+        height          : 72px;
+        width           : 100%;
+        background      : white;
+    }
+
+    .logo {
+        height     : 100%;
+        object-fit : contain;
+        padding    : 16px;
+        background : white;
+
+        animation  : sickeFlip 16s alternate infinite;
     }
 
     .nav {
@@ -127,17 +163,21 @@
     .product-grid {
         padding-left   : var(--outer);
         padding-right  : var(--outer);
-        padding-top     : 120px;
+        /*padding-top    : 120px;*/
         display        : grid;
         gap            : 24px;
         grid-auto-flow : row;
         grid-auto-rows : max-content;
         width          : 100%;
+        place-items    : center;
+        /*background: red;*/
     }
 
     .product-grid .product {
         background : var(--gray);
         padding    : 24px;
+        max-width  : 400px;
+        width      : 100%;
     }
 
     .product-grid .product .model {
