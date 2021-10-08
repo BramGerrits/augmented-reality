@@ -19,12 +19,17 @@
             hideButton: {
                 type: Boolean,
                 default: () => false
+            },
+            scale: {
+                type: Number,
+                default: () => 1
             }
         },
 
         async mounted() {
             if (process.browser) {
-                const options = this.options
+                const options = this.options;
+                const scale = this.scale;
                 const parent = this.$refs['container'];
 
                 const Module = await import('@google/model-viewer');
@@ -41,7 +46,7 @@
                     element[name] = value
                 })
 
-                // console.log({element})
+                element.scale = `${scale} ${scale} ${scale}`
 
                 parent.appendChild(element)
             }

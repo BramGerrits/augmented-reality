@@ -12,6 +12,7 @@
 
         <a-r-viewer
             ref="viewer"
+            :scale="0.75"
             :options="{
                 'src': '/models/dog/scene.gltf',
                 'alt':'A 3D model of an astronaut',
