@@ -59,6 +59,8 @@
                     element[name] = value
                 })
 
+                console.log({element})
+
                 parent.appendChild(element)
             }
         },

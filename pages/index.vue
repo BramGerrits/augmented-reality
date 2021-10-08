@@ -4,9 +4,9 @@
             ref="viewer"
             :scale="0.45"
             :options="{
-                'src': '/models/dog/scene.gltf',
+                'src': '/models/model/testdonut.glb',
                 'alt':'A 3D model of an astronaut',
-                'ar-placement': 'wall'
+                'ar-placement': 'floor'
             }"
         />
 
