@@ -34,7 +34,7 @@
                 <div class="model">
                     <a-r-viewer
                         ref="viewer"
-                        :scale="0.45"
+                        :scale="0.65"
                         :options="{
                             'src': '/models/wall/logo.glb',
                             'alt':'A 3D model of an astronaut',
