@@ -21,6 +21,8 @@
                 const Module = await import('@google/model-viewer');
                 const element = new Module.ModelViewerElement();
 
+                // console.log({element})
+
                 Object.entries(options).forEach((entry) => {
                     const name = entry[0]
                     const value = entry[1]
@@ -29,6 +31,13 @@
                 })
 
                 parent.appendChild(element)
+            }
+        },
+
+        methods: {
+            enterAR() {
+                const viewer = this.$refs.container.children[0]
+                viewer.activateAR()
             }
         }
     };
