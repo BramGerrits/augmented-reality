@@ -20,6 +20,8 @@
                 'environment-image': 'neutral',
                 'auto-rotate': true,
                 'camera-controls': true,
+                'disableZoom': true,
+                'arScale': '1 1 1'
         }" />
 
         <button class="button enter-ar" @click="$refs.viewer.enterAR()">

@@ -1,5 +1,10 @@
 <template>
-    <div class="container" ref="container"/>
+    <div
+        class="container"
+        :class="{
+            'no-button' : hideButton
+        }"
+        ref="container"/>
 </template>
 
 <script>
@@ -10,6 +15,10 @@
             options: {
                 type: Object,
                 default: () => ({})
+            },
+            hideButton: {
+                type: Boolean,
+                default: () => false
             }
         },
 
@@ -21,7 +30,9 @@
                 const Module = await import('@google/model-viewer');
                 const element = new Module.ModelViewerElement();
 
-                // console.log({element})
+                element.onload = (event) => {
+                    // console.log(event)
+                }
 
                 Object.entries(options).forEach((entry) => {
                     const name = entry[0]
@@ -29,6 +40,8 @@
 
                     element[name] = value
                 })
+
+                // console.log({element})
 
                 parent.appendChild(element)
             }
@@ -38,7 +51,7 @@
             enterAR() {
                 const viewer = this.$refs.container.children[0]
                 viewer.activateAR()
-            }
+            },
         }
     };
 </script>
@@ -48,6 +61,11 @@
         height: 100vh;
         width: 100vw;
     }
+
+    /*.container.no-button::v-deep #default-ar-button {*/
+    /*    display: none;*/
+    /*    background: red;*/
+    /*}*/
 
     .container::v-deep > * {
         height: 100%;
