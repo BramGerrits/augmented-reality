@@ -10,7 +10,7 @@
                 <div class="model">
                     <a-r-viewer
                         ref="floorViewer"
-                        :scale="0.45"
+                        :scale="0.40"
                         :options="{
                             'src': '/models/floor/floertje.glb',
                             'alt':'A 3D model of an astronaut',
@@ -38,7 +38,7 @@
                         :options="{
                             'src': '/models/model/testdonut.glb',
                             'alt':'A 3D model of an astronaut',
-                            'ar-placement': 'floor'
+                            'ar-placement': 'wall'
                         }"
                     />
                 </div>
